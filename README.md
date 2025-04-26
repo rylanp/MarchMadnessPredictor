@@ -4,13 +4,7 @@
 
 ## Bio & Info ##
 
-I am a sophomore class of 2027 at the University of Notre Dame. Originally a CPEG, I am now an electrical engineer. The only  
-incentive for creating this project was because I think it's cool. I had previously made one my junior year of highschool and  
-reformatted it for the March Madness data during my freshman spring at Notre Dame. It performed slightly worse than my own bracket,  
-but it was still a joy to create and watch unfold. This is my new and improved version! Given 2 teams, it will predict how many  
-points each team will score both if they were home then away, then average their respective points. By default, the network uses  
-LeakyReLU activation functions for everything. The default loss function is Mean Squared Error. For understanding, start in main.py,  
-then work your way to neuralnetwork.py, objects.py, then all the other stuff is extra. Enjoy!  
+I am a sophomore class of 2027 at the University of Notre Dame. Originally a CPEG, I am now an electrical engineer. The only incentive for creating this project was because I think it's cool. I had previously made one my junior year of highschool and reformatted it for the March Madness data during my freshman spring at Notre Dame. It performed slightly worse than my own bracket, but it was still a joy to create and watch unfold. This is my new and improved version! Given 2 teams, it will predict how many points each team will score both if they were home then away, then average their respective points. By default, the network uses LeakyReLU activation functions for everything. The default loss function is Mean Squared Error. For understanding, start in main.py, then work your way to neuralnetwork.py, objects.py, then all the other stuff is extra. Enjoy!  
 ##### - Rylan Paul
 
 ## Files ##
