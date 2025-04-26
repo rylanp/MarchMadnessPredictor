@@ -1,0 +1,134 @@
+1  Auburn Tigers 74 
+16 Alabama State Hornets 67 
+8  Louisville Cardinals 69 
+9  Creighton Bluejays 68 
+5  Michigan Wolverines 66 
+12 UC San Diego Tritons 68 
+4  Texas A&M Aggies 63 
+13 Yale Bulldogs 70 
+6  Ole Miss Rebels 69 
+11 North Carolina Tar Heels 68 
+3  Iowa State Cyclones 67 
+14 Lipscomb Bisons 68 
+7  Marquette Golden Eagles 68 
+10 New Mexico Lobos 69 
+2  Michigan State Spartans 68 
+15 Bryant Bulldogs 70 
+1  Florida Gators 70 
+16 Norfolk State Spartans 66 
+8  UConn Huskies 70 
+9  Oklahoma Sooners 68 
+5  Memphis Tigers 73 
+12 Colorado State Rams 70 
+4  Maryland Terrapins 68 
+13 Grand Canyon Lopes 64 
+6  Missouri Tigers 64 
+11 Drake Bulldogs 64 
+3  Texas Tech Red Raiders 69 
+14 UNC Wilmington Seahawks 66 
+7  Kansas Jayhawks 70 
+10 Arkansas Razorbacks 71 
+2  St. John's Red Storm 71 
+15 Omaha Mavericks 69 
+1  Duke Blue Devils 72 
+16 American University Eagles 67 
+8  Mississippi State Bulldogs 69 
+9  Baylor Bears 70 
+5  Oregon Ducks 67 
+12 Liberty Flames 67 
+4  Arizona Wildcats 66 
+13 Akron Zips 67 
+6  BYU Cougars 66 
+11 VCU Rams 66 
+3  Wisconsin Badgers 66 
+14 Montana Grizzlies 63 
+7  Saint Mary's Gaels 69 
+10 Vanderbilt Commodores 67 
+2  Alabama Crimson Tide 67 
+15 Robert Morris Colonials 64 
+1  Houston Cougars 70 
+16 LSU Tigers 67 
+8  Gonzaga Bulldogs 71 
+9  Georgia Bulldogs 65 
+5  Clemson Tigers 68 
+12 McNeese Cowboys 67 
+4  Purdue Boilermakers 69 
+13 High Point Panthers 68 
+6  Illinois Fighting Illini 70 
+11 Texas Longhorns 68 
+3  Kentucky Wildcats 68 
+14 Troy Trojans 63 
+7  UCLA Bruins 66 
+10 Utah State Aggies 69 
+2  Tennessee Volunteers 72 
+15 Wofford Terriers 69 
+
+1  Auburn Tigers 68 
+8  Louisville Cardinals 67 
+12 UC San Diego Tritons 71 
+13 Yale Bulldogs 72 
+6  Ole Miss Rebels 66 
+14 Lipscomb Bisons 67 
+10 New Mexico Lobos 70 
+15 Bryant Bulldogs 68 
+1  Florida Gators 71 
+8  UConn Huskies 69 
+5  Memphis Tigers 67 
+4  Maryland Terrapins 69 
+11 Drake Bulldogs 66 
+3  Texas Tech Red Raiders 68 
+10 Arkansas Razorbacks 69 
+2  St. John's Red Storm 73 
+1  Duke Blue Devils 72 
+9  Baylor Bears 69 
+12 Liberty Flames 71 
+13 Akron Zips 71 
+11 VCU Rams 64 
+3  Wisconsin Badgers 66 
+7  Saint Mary's Gaels 66 
+2  Alabama Crimson Tide 67 
+1  Houston Cougars 67 
+8  Gonzaga Bulldogs 72 
+5  Clemson Tigers 67 
+4  Purdue Boilermakers 66 
+6  Illinois Fighting Illini 68 
+3  Kentucky Wildcats 69 
+10 Utah State Aggies 67 
+2  Tennessee Volunteers 66 
+
+1  Auburn Tigers 67 
+13 Yale Bulldogs 67 
+14 Lipscomb Bisons 71 
+10 New Mexico Lobos 72 
+1  Florida Gators 69 
+4  Maryland Terrapins 70 
+3  Texas Tech Red Raiders 69 
+2  St. John's Red Storm 67 
+1  Duke Blue Devils 68 
+12 Liberty Flames 66 
+3  Wisconsin Badgers 72 
+2  Alabama Crimson Tide 73 
+8  Gonzaga Bulldogs 72 
+5  Clemson Tigers 69 
+3  Kentucky Wildcats 67 
+10 Utah State Aggies 66 
+
+1  Auburn Tigers 68 
+10 New Mexico Lobos 66 
+4  Maryland Terrapins 72 
+3  Texas Tech Red Raiders 71 
+1  Duke Blue Devils 68 
+2  Alabama Crimson Tide 68 
+8  Gonzaga Bulldogs 67 
+3  Kentucky Wildcats 65 
+
+1  Auburn Tigers 69 
+4  Maryland Terrapins 69 
+1  Duke Blue Devils 69 
+8  Gonzaga Bulldogs 70 
+
+4  Maryland Terrapins 69 
+8  Gonzaga Bulldogs 70 
+
+8  Gonzaga Bulldogs 0  
+

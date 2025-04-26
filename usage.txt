@@ -1,0 +1,243 @@
+Function: Tuple
+Usage: Deprecated alias to builtins.tuple.
+
+    Tuple[X, Y] is the cross-product type of X and Y.
+
+    Example: Tuple[T1, T2] is a tuple of two elements corresponding
+    to type variables T1 and T2.  Tuple[int, float, str] is a tuple
+    of an int, a float and a string.
+
+    To specify a variable-length tuple of homogeneous type, use Tuple[T, ...].
+    
+--------------------------------------------------------------------------------
+Function: Union
+Usage: Union type; Union[X, Y] means either X or Y.
+
+    On Python 3.10 and higher, the | operator
+    can also be used to denote unions;
+    X | Y means the same thing to the type checker as Union[X, Y].
+
+    To define a union, use e.g. Union[int, str]. Details:
+    - The arguments must be types and there must be at least one.
+    - None as an argument is a special case and is replaced by
+      type(None).
+    - Unions of unions are flattened, e.g.::
+
+        assert Union[Union[int, str], float] == Union[int, str, float]
+
+    - Unions of a single argument vanish, e.g.::
+
+        assert Union[int] == int  # The constructor actually returns int
+
+    - Redundant arguments are skipped, e.g.::
+
+        assert Union[int, str, int] == Union[int, str]
+
+    - When comparing unions, the argument order is ignored, e.g.::
+
+        assert Union[int, str] == Union[str, int]
+
+    - You cannot subclass or instantiate a union.
+    - You can use Optional[X] as a shorthand for Union[X, None].
+    
+--------------------------------------------------------------------------------
+Function: datetime
+Usage: datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])
+
+The year, month and day arguments are required. tzinfo may be None, or an
+instance of a tzinfo subclass. The remaining arguments may be ints.
+
+--------------------------------------------------------------------------------
+Function: get_conference_schedule
+Usage: Returns the given season's schedules for all teams in the given conference.
+
+    Args:
+        conference (str): The conference to return schedules for.
+        season (int, optional): The season to return conferences for. Defaults to current season.
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+
+    Returns:
+        pd.DataFrame: The conference schedules.
+    
+--------------------------------------------------------------------------------
+Function: get_game
+Usage: A function that scrapes all game info (metadata, boxscore, play-by-play).
+
+    Parameters:
+        game_id (str | int): The game's ESPN game ID
+        info (bool, optional): Whether the game metadata is to be scraped. Defaults to True.
+        box (bool, optional): Whether the game boxscore is to be scraped. Defaults to True.
+        pbp (bool, optional): Whether the game play-by-play is to be scraped. Defaults to True.
+
+    Returns:
+        a tuple containing
+
+        - pd.DataFrame: The game's metadata.
+
+        - pd.DataFrame: The game's boxscore (both teams combined).
+
+        - pd.DataFrame: The game's play-by-play.
+    
+--------------------------------------------------------------------------------
+Function: get_game_boxscore
+Usage: Scrapes each team's boxscore for a given game.
+
+    Parameters:
+        game_id (str | int): The game's ESPN game ID.
+
+    Returns:
+        pd.DataFrame: The boxscores of both teams, combined into one table.
+    
+--------------------------------------------------------------------------------
+Function: get_game_ids
+Usage: Scrapes all game IDs for a given date.
+
+    Parameters:
+        date (str | datetime): The date of the games to be scraped.
+
+    Returns:
+        list: The ESPN game IDs for each game played on the given date.
+    
+--------------------------------------------------------------------------------
+Function: get_game_info
+Usage: Scrapes game metadata from the ESPN game page.
+
+    Args:
+        game_id (str | int): The game's ESPN game ID.
+
+    Returns:
+        pd.DataFrame: The game's metadata scraped from the game page.
+    
+--------------------------------------------------------------------------------
+Function: get_game_pbp
+Usage: Scrapes a game's play-by-play data.
+
+    Parameters:
+        game_id (str | int): The game's ESPN game ID.
+
+    Returns:
+        pd.DataFrame: The game's play-by-play information, with a row for each play.
+    
+--------------------------------------------------------------------------------
+Function: get_games_conference
+Usage: Scrapes desired game information (metadata, boxscore, play-by-play) for every game for every team for a given conference and season.
+
+    Parameters:
+        conference (str): The conference whose teams will have their games scraped.
+        season (str | int, optional): The season to be scraped. 
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+        info (bool, optional): Whether the game metadata is to be scraped. Defaults to True.
+        box (bool, optional): Whether the game boxscore is to be scraped. Defaults to True.
+        pbp (bool, optional): Whether the game play-by-play is to be scraped. Defaults to True.
+
+    Returns:
+        a tuple containing
+
+        - pd.DataFrame: The conference's teams' games metadata.
+
+        - pd.DataFrame: The conference's teams' season boxscores (both teams combined).
+
+        - pd.DataFrame: The conference's teams' season play-by-plays.
+    
+--------------------------------------------------------------------------------
+Function: get_games_range
+Usage: A function that scrapes a game information between a given range of dates.
+
+    Parameters:
+        start_date (str | datetime): The first day of games to scrape.
+        end_date (str | datetime): The last day of games to scrape (inclusive).
+        info (bool, optional): Whether the game metadata is to be scraped. Defaults to True.
+        box (bool, optional): Whether the game boxscore is to be scraped. Defaults to True.
+        pbp (bool, optional): Whether the game play-by-play is to be scraped. Defaults to True.
+
+    Returns:
+        a tuple containing
+
+        - pd.DataFrame: The game's metadata.
+
+        - pd.DataFrame: The game's boxscore (both teams combined).
+
+        - pd.DataFrame: The game's play-by-play.
+    
+--------------------------------------------------------------------------------
+Function: get_games_season
+Usage: Scrapes desired game information (metadata, boxscore, play-by-play) for every game of a given season.
+
+    Parameters:
+        season (str | int): The season to be scraped. 
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+        info (bool, optional): Whether the game metadata is to be scraped. Defaults to True.
+        box (bool, optional): Whether the game boxscore is to be scraped. Defaults to True.
+        pbp (bool, optional): Whether the game play-by-play is to be scraped. Defaults to True.
+
+    Returns:
+        a tuple containing
+
+        - pd.DataFrame: The game's metadata.
+
+        - pd.DataFrame: The game's boxscore (both teams combined).
+
+        - pd.DataFrame: The game's play-by-play.
+    
+--------------------------------------------------------------------------------
+Function: get_games_team
+Usage: Scrapes desired game information (metadata, boxscore, play-by-play) for every game of a given team and season.
+
+    Parameters:
+        team (str): The team whose games will be scraped.
+        season (str | int, optional): The season to be scraped. 
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+        info (bool, optional): Whether the game metadata is to be scraped. Defaults to True.
+        box (bool, optional): Whether the game boxscore is to be scraped. Defaults to True.
+        pbp (bool, optional): Whether the game play-by-play is to be scraped. Defaults to True.
+
+    Returns:
+        a tuple containing
+
+        - pd.DataFrame: The team's games metadata.
+
+        - pd.DataFrame: The team's season boxscores (both teams combined).
+
+        - pd.DataFrame: The team's season play-by-plays.
+    
+--------------------------------------------------------------------------------
+Function: get_player_info
+Usage: Scrapes player details from his bio page for a given player ID.
+
+    Args:
+        player_id (int | str): The player's ESPN player ID.
+
+    Returns:
+        pd.DataFrame: The given player's details.
+    
+--------------------------------------------------------------------------------
+Function: get_team_schedule
+Usage: Scrapes a given team's schedule for a specified season.
+
+    Args:
+        team (str): The name of the team to be scraped.
+        season (str | int, optional): The season to be scraped. Defaults to current season.
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+
+    Returns:
+        pd.DataFrame: The given team's schedule for the year.
+    
+--------------------------------------------------------------------------------
+Function: get_teams_from_conference
+Usage: Fetches the list of teams from the given conference during a given season.
+
+    Args:
+        conference (str): The conference to be fetched.
+        season (str | int): The relevant season. Defaults to current season.
+            NOTE: season takes the form of the four-digit representation of the later year of the season. 
+            So, as an example, the 2021-22 season is referred to by the integer 2022.
+
+    Returns:
+        list: The teams in the given conference.
+    
+--------------------------------------------------------------------------------

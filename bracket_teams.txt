@@ -1,0 +1,65 @@
+rank,team,record
+1,Auburn,28-5
+16,Alabama State Hornets/St. Francis (PA) Red Flash,19-15/16-17
+8,Louisville,27-7
+9,Creighton,24-10
+5,Michigan,25-9
+12,UC San Diego,30-4
+4,Texas A&M,22-10
+13,Yale,22-7
+6,Ole Miss,22-11
+11,San Diego State Aztecs/North Carolina Tar Heels,21-9/22-13
+3,Iowa State,24-9
+14,Lipscomb,25-9
+7,Marquette,23-10
+10,New Mexico,26-7
+2,Michigan St,27-6
+15,Bryant,23-11
+1,Florida,30-4
+16,Norfolk St,24-10
+8,UConn,23-10
+9,Oklahoma,20-13
+5,Memphis,29-5
+12,Colorado St,25-9
+4,Maryland,25-8
+13,Grand Canyon,26-7
+6,Missouri,22-11
+11,Drake,30-3
+3,Texas Tech,25-8
+14,UNC Wilmington,27-7
+7,Kansas,21-12
+10,Arkansas,20-13
+2,St. John's Red Storm,30-4
+15,Omaha,22-12
+1,Duke,31-3
+16,American University Eagles/Mount St. Mary's Mountaineers,22-12/22-12
+8,Mississippi St,21-12
+9,Baylor,19-14
+5,Oregon,24-9
+12,Liberty,28-6
+4,Arizona,22-12
+13,Akron,28-6
+6,BYU,24-9
+11,VCU,28-6
+3,Wisconsin,26-9
+14,Montana,25-9
+7,Saint Mary's,28-5
+10,Vanderbilt,20-12
+2,Alabama Crimson Tide,25-8
+15,Robert Morris,26-8
+1,Houston,30-4
+16,SIUE,22-11
+8,Gonzaga,25-8
+9,Georgia,20-12
+5,Clemson,27-6
+12,McNeese,27-6
+4,Purdue,22-11
+13,High Point,29-5
+6,Illinois Fighting Illini,21-12
+11,Texas Longhorns/Xavier Musketeers,19-15/21-11
+3,Kentucky,22-11
+14,Troy,23-10
+7,UCLA Bruins,22-10
+10,Utah State,26-7
+2,Tennessee,27-7
+15,Wofford,19-15
