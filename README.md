@@ -1,11 +1,12 @@
 # March Madness Predictor #
 ### Author: Rylan Paul
 #### April 26, 2025
+#### [Rylan's Portfolio](https://rylanpaul.com)
+
 
 ## Bio & Info ##
 
 I am a sophomore class of 2027 at the University of Notre Dame. Originally a CPEG, I am now an electrical engineer. The only incentive for creating this project was because I think it's cool. I had previously made one my junior year of highschool and reformatted it for the March Madness data during my freshman spring at Notre Dame. It performed slightly worse than my own bracket, but it was still a joy to create and watch unfold. This is my new and improved version! Given 2 teams, it will predict how many points each team will score both if they were home then away, then average their respective points. By default, the network uses LeakyReLU activation functions for everything. The default loss function is Mean Squared Error. For understanding, start in main.py, then work your way to neuralnetwork.py, objects.py, then all the other stuff is extra. Enjoy!  
-##### - Rylan Paul
 
 ## Files ##
 
@@ -128,3 +129,14 @@ def main():
         // DO NOT EDIT BELOW
         ...
     ```
+
+## Summary ##
+For the past two years now, I have created a small feedforward neural network to predict a perfect March Madness bracket. Although they were each far from perfect, I enjoyed developing them in Python. My 2024-2025 bracket picked Gonzaga beating Maryland in the final. While this was not very close, it did correctly have both Auburn and Duke losing in the semifinals. I would not say that this model was particularly great at predicting the winner, but rather it was excellent at predicting if a game was going to be very close or a blowout. The ESPN bracket achieved 23.8% correct with 670 points. Comparing this model with my personal 4 other brackets, this model placed exactly in the middle at third. This time around I created several Python data structures to assist in developing the network. The first object I created was one for the player to hold all of a player’s stats. This was useful as I could load data into a player object then utilize Python’s magic methods to get a player average with
+```python
+(Player1 + Player 2) / 2 = PlayerAverage
+```
+Additionally, I used Cbbpy to fetch data with Pandas to read the csv. Most math was done with Numpy, and its various functions. The network was trained with a size of **19** inputs, **3** layers of **64**, **32**, and **16** neurons each respectively, and an output layer of **2** neurons. The training data was from all games since 2021. Given two teams, the model will create the teams’ average players by averaging the top 5 players from every game this season. The inputs are the differences between the home team and player stats with the away team and player stats. The model then predicts how many points each team will score both if they were home then away, then averages their respective points. By default, the network uses LeakyReLU activation function, but there are plenty of included options to change that. The default loss function is Mean Squared Error, but again there are many different options. I also have scripts for displaying an in-line progress bar and one to draw the predicted bracket graphic.
+
+## Developed by Rylan Paul
+### [Rylan's Portfolio](https://rylanpaul.com)
+[https://rylanpaul.com](https://rylanpaul.com)
