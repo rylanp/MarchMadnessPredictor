@@ -15,7 +15,7 @@ from random import randint as rand
 import csv
 from copy import deepcopy
 class MarchMadnessNetwork(RylansNeuralNetwork):
-    def fetch_games(self, seasons=[2021, 2022,2023,2024,2025]):
+    def fetch_games(self, seasons=[2021,2022,2023,2024,2025]):
         if not hasattr(self, 'collector'):
             self.collector = DataCollector("data.csv")
         self.collector.scrape(seasons)
